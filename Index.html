@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Cek Nilai Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cek Nilai Siswa</h1>
+    
+    <p>Nama : <input type="text" id="inputNama" placeholder="Masukkan Nama"></p>
+    <p>Nilai: <input type="number" id="inputNilai" placeholder="0 - 100" min="0" max="100" oninput="this.value = this.value.replace(/[^0-9]/g,'')"></p>
+    
+    <button onclick="cekNilaiSiswa()">Proses Nilai</button>
+
+    <hr>
+
+    <h3>Daftar Nilai</h3>
+
+    <div id="daftarNilai"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
